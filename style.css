@@ -1,0 +1,217 @@
+/* ----------- ----------- ----------- ----------- ----------- ----------- */
+/*                                 Global                                  */
+/* ----------- ----------- ----------- ----------- ----------- ----------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: black;
+}
+
+a:visited {
+    color: white;
+}
+
+p {
+    font-size: 12px;
+    color: white;
+    text-align: start;
+}
+
+h2 {
+    color: white;
+    font-size: 14px;
+    text-align: start;
+}
+
+.button-type-one {
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.button-type-two {
+    padding: 5px 10px;
+    background-color: orange;
+    border-radius: 5px;
+}
+
+/* ----------- ----------- ----------- ----------- ----------- ----------- */
+/*                                nav                                */
+/* ----------- ----------- ----------- ----------- ----------- ----------- */
+
+nav {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    color: aqua;
+    width: 35%;
+}
+
+.nav-links {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.nav-link-contact {
+    color: red;
+    text-decoration: none;
+}
+
+.nav-link-billeterie {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ----------- ----------- ----------- ----------- ----------- ----------- */
+/*                              main background                               */
+/* ----------- ----------- ----------- ----------- ----------- ----------- */
+
+.main-bg {
+    background-color: red;
+    height: calc(100vh - 200px);
+    width: 100%;
+}
+
+/* ----------- ----------- ----------- ----------- ----------- ----------- */
+/*                                  Events                                  */
+/* ----------- ----------- ----------- ----------- ----------- ----------- */
+
+.event {
+    margin-top: 50px;
+    padding: 0 35px;
+}
+
+.event_title {
+    text-align: start;
+}
+
+.events {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    background-color: beige;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+}
+
+.event-card_header {
+    height: 20%;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    justify-content: initial;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.event-card_header_text {
+    color: white;
+}
+
+.event-card_photo {
+    height: 60%;
+}
+
+.event-card_footer {
+    height: 20%;
+    background-color: blueviolet;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.event-card_footer_loca {
+    
+}
+
+.event-card_footer_date {
+
+}
+
+.discover-events {
+    margin-top: 50px;
+}
+
+.discover-events_text {
+    text-align: start;
+    margin-bottom: 25px;
+}
+
+.discover-events_button {
+    width: fit-content;
+}
+
+.discover-events_button_text {
+    color: white;
+}
+
+/* ----------- ----------- ----------- ----------- ----------- ----------- */
+/*                                  Discover                                  */
+/* ----------- ----------- ----------- ----------- ----------- ----------- */
+
+.discover {
+    margin-top: 50px;
+    padding: 0 35px;
+}
+
+.discover_title {
+    margin-bottom: 30px;
+}
+
+.discover_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.discover_content_left {
+    width: 60%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.tempdis {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
