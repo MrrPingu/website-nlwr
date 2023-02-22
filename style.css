@@ -17,6 +17,16 @@ html {
 body {
     font-family: sans-serif;
     background-color: black;
+    overflow-x: hidden;
+    
+}
+
+.body {
+    padding: 0 60px;
+}
+
+a {
+    text-decoration: none;
 }
 
 a:visited {
@@ -24,27 +34,52 @@ a:visited {
 }
 
 p {
-    font-size: 12px;
+    font-size: 24px;
     color: white;
     text-align: start;
 }
 
 h2 {
     color: white;
-    font-size: 14px;
+    font-size: 28px;
     text-align: start;
 }
 
+footer {
+    height: 326px;
+    background-color: #9B6A45;
+    width: 100vw;
+    padding: 67px 60px 18px 60px;
+}
+
 .button-type-one {
-    padding: 5px 10px;
+    padding: 10px 25px;
     background-color: white;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button-type-two {
-    padding: 5px 10px;
-    background-color: orange;
+    padding: 10px 25px;
+    background-color: #9B6A45;
+    color: white;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-type-one-text {
+    color: #9B6A45;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.button-type-two-text {
+
 }
 
 /* ----------- ----------- ----------- ----------- ----------- ----------- */
@@ -68,23 +103,33 @@ nav {
     width: 65%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: end;
+    padding-right: 50px;
+
 }
 
 .nav-link {
     color: white;
-    text-decoration: none;
+    margin: 0 50px;
+    
     
 }
 
 .nav-link-contact {
     color: red;
-    text-decoration: none;
 }
 
 .nav-link-billeterie {
     color: white;
-    text-decoration: none;
+}
+
+.logo {
+    width: 272px;
+    height: 136px;
+}
+
+.nav-div {
+    margin: 0 25px;
 }
 
 
@@ -93,9 +138,14 @@ nav {
 /* ----------- ----------- ----------- ----------- ----------- ----------- */
 
 .main-bg {
-    background-color: red;
     height: calc(100vh - 200px);
     width: 100%;
+    padding: 0;
+}
+
+.main-cover {
+    width: 100%;
+    height: 100%;
 }
 
 /* ----------- ----------- ----------- ----------- ----------- ----------- */
@@ -104,11 +154,11 @@ nav {
 
 .event {
     margin-top: 50px;
-    padding: 0 35px;
 }
 
 .event_title {
     text-align: start;
+
 }
 
 .events {
@@ -120,8 +170,8 @@ nav {
 
 .event-card {
     background-color: beige;
-    width: 300px;
-    height: 300px;
+    width: 28vw;
+    height: 28vw;
     border-radius: 10px;
     margin-right: 15px;
     margin-bottom: 15px;
@@ -130,7 +180,8 @@ nav {
 
 .event-card_header {
     height: 20%;
-    background-color: blueviolet;
+    background-color: #9B6A45;
+    border-radius: 10px 10px 0px 0px;
     display: flex;
     flex-direction: row;
     justify-content: initial;
@@ -146,9 +197,15 @@ nav {
     height: 60%;
 }
 
+.event-card_photo_img {
+    width: 100%;
+    height: 100%;
+}
+
 .event-card_footer {
     height: 20%;
-    background-color: blueviolet;
+    background-color: #9B6A45;
+    border-radius: 0px 0px 10px 10px;
     padding-left: 5px;
     display: flex;
     flex-direction: row;
@@ -158,11 +215,19 @@ nav {
 }
 
 .event-card_footer_loca {
-    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .event-card_footer_date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
+.event-card_picto {
+    margin-right: 10px;
 }
 
 .discover-events {
@@ -171,7 +236,7 @@ nav {
 
 .discover-events_text {
     text-align: start;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 
 .discover-events_button {
@@ -187,31 +252,135 @@ nav {
 /* ----------- ----------- ----------- ----------- ----------- ----------- */
 
 .discover {
+    height: 800px;
     margin-top: 50px;
-    padding: 0 35px;
+    margin-bottom: 50px;
 }
 
 .discover_title {
     margin-bottom: 30px;
+    height: 10%;
+}
+
+.discover_text {
+    height: 70%;
 }
 
 .discover_content {
+    height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between
 }
 
 .discover_content_left {
-    width: 60%;
-    height: 200px;
+    width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
 }
 
-.tempdis {
-    width: 200px;
-    height: 200px;
-    background-color: red;
+.discover_container_img {
+    width: 45%;
+
+}
+
+.discover-events_button {
+    position: relative;
+    top: -30px;
+}
+
+/* ----------- ----------- ----------- ----------- ----------- ----------- */
+/*                               old editions                                */
+/* ----------- ----------- ----------- ----------- ----------- ----------- */
+
+.old-editions_section {
+    background-color: #144B4F;
+    width: 80%;
+    margin-left: 20%;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 150px;
+}
+
+.old-editions_section_texts {
+    width: 80%;
+    height: 100%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.old-editions_photo_img {
+    position: relative;
+    width: 30%;
+    top: 200px;
+    left: -35%;
+}
+
+.old_edition_button {
+    width: fit-content;
+}
+
+.newsletter_button_text {
+    color: #9B6A45;
+}
+
+
+/* ----------- ----------- ----------- ----------- ----------- ----------- */
+/*                                newsletter                                 */
+/* ----------- ----------- ----------- ----------- ----------- ----------- */
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.newsletter_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter_title {
+    margin-bottom: 18px;
+}
+
+.newsletter_input {
+    width: 672px;
+    height: 70px;
+    border-radius: 10px;
+    font-size: 24px;
+    padding-left: 5px;
+    padding-right: 150px;
+}
+
+.newsletter_button {
+    width: fit-content;
+    position: relative;
+    top: -58px;
+    left: 480px;
+    border: none;
+}
+
+
+/* ----------- ----------- ----------- ----------- ----------- ----------- */
+/*                                Footer                                 */
+/* ----------- ----------- ----------- ----------- ----------- ----------- */
+
+.footer_links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_link_text {
+    margin: 10px;
+}
+
+.footer_copyrights {
+    margin-top: 45px;
+    font-size: 15px;
+    text-align: center;
 }
