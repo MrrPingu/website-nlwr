@@ -11,17 +11,18 @@
 </head>
 
 <body>
-
     <nav>
+        
         <div class="nav-logo">logo</div>
         <div class="nav-links">
-            <a class="nav-link" href=""><p>Evénements</p></a>
-            <a class="nav-link" href=""><p>NLWR</p></a>
-            <a class="nav-link" href=""><p>Galerie</p></a>
-            <a class="nav-link" href=""><p>TV</p></a>
+            <a class="nav-link" href="">Evénements</a>
+            <a class="nav-link" href="">NLWR</a>
+            <a class="nav-link" href="">Galerie</a>
+            <a class="nav-link" href="">TV</a>
             <div class="button-type-one"><a class="nav-link-contact" href=""><p>Contact</p></a></div>
             <div class="button-type-two"><a class="nav-link-billeterie" href=""><p>Billeterie</p></a></div>
         </div>
+        <img src="image/hamburger_icon.svg.png" alt="menu burger" class="menu-burger">
     </nav>
 
     <div class="main-bg">
@@ -113,8 +114,15 @@
         </div>
        
     </div>
-
-
 </body>
+
+<script>
+    const menuHamburger = document.querySelector(".menu-burger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
 
 </html>
